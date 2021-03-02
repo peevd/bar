@@ -1,0 +1,81 @@
+[
+  {
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+      "username": "user1",
+      "password": "P@@ssword@@",
+      "email": "user1@mail.com"
+    }
+  },
+  {
+    "model": "bars.bar",
+    "pk": 1,
+    "fields": {
+      "name": "bar1",
+      "rating": "2",
+      "created_at": "2021-03-02T14:07:31+0200",
+      "updated_at": "2021-03-02T14:07:31+0200"
+    }
+  },
+  {
+    "model": "bars.bar",
+    "pk": 2,
+    "fields": {
+      "name": "bar2",
+      "rating": "4",
+      "created_at": "2021-03-02T14:07:31+0200",
+      "updated_at": "2021-03-02T14:07:31+0200"
+    }
+  },
+  {
+    "model": "bars.bar",
+    "pk": 3,
+    "fields": {
+      "name": "bar3",
+      "rating": "4",
+      "created_at": "2021-03-02T14:07:31+0200",
+      "updated_at": "2021-03-02T14:07:31+0200"
+    }
+  },
+  {
+    "model": "bars.bar",
+    "pk": 4,
+    "fields": {
+      "name": "bar4",
+      "rating": "2",
+      "created_at": "2021-03-02T14:07:31+0200",
+      "updated_at": "2021-03-02T14:07:31+0200"
+    }
+  },
+  {
+    "model": "bars.bar",
+    "pk": 5,
+    "fields": {
+      "name": "bar51",
+      "rating": "5",
+      "created_at": "2021-03-02T14:07:31+0200",
+      "updated_at": "2021-03-02T14:07:31+0200"
+    }
+  },
+  {
+    "model": "bars.bar",
+    "pk": 6,
+    "fields": {
+      "name": "bar6",
+      "rating": "3",
+      "created_at": "2021-03-02T14:07:31+0200",
+      "updated_at": "2021-03-02T14:07:31+0200"
+    }
+  },
+  {
+    "model": "bars.bar",
+    "pk": 7,
+    "fields": {
+      "name": "bar7",
+      "rating": "1",
+      "created_at": "2021-03-02T14:07:31+0200",
+      "updated_at": "2021-03-02T14:07:31+0200"
+    }
+  }
+]

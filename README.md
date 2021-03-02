@@ -21,7 +21,7 @@
     docker-compose up
     ```
 
-4. Migrate DB tables and create super user:
+4. Migrate DB tables, create super user and load initial data:
       - Enter api container:
         ```
         docker exec -it test-app /bin/bash
@@ -34,6 +34,14 @@
           ```
           python manage.py createsuperuser
           ```
+      - Load initial data for user and bar models
+          ```
+          python manage.py loaddata initial_data.json
+
+          ```
+          That will add some Bar rows in database and
+          will create test user with username: user1, password: P@@ssword@@
+
 ## Routes
 
 Server starting at http://0.0.0.0:8000/
