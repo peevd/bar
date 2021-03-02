@@ -39,8 +39,11 @@
           python manage.py loaddata initial_data.json
 
           ```
-          That will add some Bar rows in database and
-          will create test user with username: user1, password: P@@ssword@@
+          that will add some Bar rows in database and
+          will create test user with:
+
+            username: user1
+            password: P@@ssword@@
 
 ## Routes
 
