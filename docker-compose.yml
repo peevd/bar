@@ -1,0 +1,39 @@
+version: '3'
+
+networks:
+  app_tire:
+    driver: bridge
+
+services:
+  db:
+    container_name: test_app_db
+    image: postgres
+    env_file:
+      - ".env"
+    environment:
+      - POSTGRES_DB=test_psg_db
+      - POSTGRES_USER=test_prj_pgs
+      - POSTGRES_PASSWORD=p@@ssword
+    volumes:
+      - ./postgres_data:/postgres_data
+    restart: always
+    networks:
+      - app_tire
+
+  app:
+    container_name: test-app
+    env_file:
+      - ./.env
+    build:
+      context: ./test_app/
+      dockerfile: Dockerfile
+    command: python3 manage.py runserver 0.0.0.0:8000
+    volumes:
+      - ./test_app:/test_app
+    ports:
+      - '8000:8000'
+    restart: always
+    networks:
+      - app_tire
+    depends_on:
+      - db
