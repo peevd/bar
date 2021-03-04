@@ -62,10 +62,10 @@ Server starting at http://0.0.0.0:8000/
 * /api/bars/
   * required token authentication
   * accepts 'GET', 'POST' requests
-  * accepts 'rating' query parameter for filtering bars,
+  * accepts 'rating_gte' query parameter for filtering bars,
         returning only bars that have rating equal or greater than the parameter
   * returns a list of bars in the form of: { id, name, rating }
-* /api/bars/<id>
+* /api/bars/{id}
   * required token authentication
   * accepts 'GET', 'DELETE'
   * gets or deletes a single bar by id
